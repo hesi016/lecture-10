@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Map, View } from "ol";
-import TileLayer from "ol/layer/Tile";
-import { OSM } from "ol/source";
+//import TileLayer from "ol/layer/Tile";
+//import { OSM } from "ol/source";
 import { useGeographic } from "ol/proj";
 
 import "ol/ol.css";
@@ -9,11 +9,11 @@ import { MapboxVectorLayer } from "ol-mapbox-style";
 
 useGeographic();
 
-const osmLayer = new TileLayer({ source: new OSM() });
+// const osmLayer = new TileLayer({ source: new OSM() });
 const mapBoxLayer = new MapboxVectorLayer({
   styleUrl: "mapbox://styles/mapbox/bright-v9",
   accessToken:
-    "pk.eyJ1Ijoiamhhbm5lcyIsImEiOiJjbHVmaHJxcnAwczVyMmpvYzB2aXh6bDI5In0.lrAcWw8waJKbUNyBF8Vzqw",
+    "pk.eyJ1IjoiaGVzaTAxNiIsImEiOiJjbThzb2x3bDUwMXZnMmtzZWFydXRmODF0In0.UmDA5L5jhVM4C1LxTVWiGQ",
 });
 
 const map = new Map({
