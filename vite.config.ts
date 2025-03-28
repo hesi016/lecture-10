@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/lecture-10/",
+  base: "/lecture-10",
 });
